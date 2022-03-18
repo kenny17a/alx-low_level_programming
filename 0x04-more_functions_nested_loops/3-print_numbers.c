@@ -1,12 +1,18 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * print_numbers - display all number from 0 to 9 followed by new line.
  *
- * Return: Always 0.
+ *Return: void
  */
-int main(void)
+void print_numbers(void)
 {
-    print_numbers();
-    return (0);
+int i;
+
+	for (i = 48; i <= 57; i++)
+	{
+		_putchar(i);
+	}
+_putchar('\n');
 }
+
