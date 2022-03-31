@@ -1,27 +1,15 @@
-#include "main.h"
-/**
- * _puts_recursion - Fuction to print a sting followed by a new line
- *
- * @s: holds the strings to be printed
- *
- * Return: void
- */
-void _puts_recursion(char *s)
-{
+#ifndef MAIN_H
+#define MAIN_H
 
-	int i = 0;
+int _putchar(char);
+void _puts_recursion(char *);
+void _print_rev_recursion(char *s);
+int _strlen_recursion(char *s);
+int factorial(int n);
+int _pow_recursion(int x, int y);
+int _sqrt_recursion(int n);
+int is_prime_number(int n);
+int is_palindrome(char *s);
+int wildcmp(char *s1, char *s2);
 
-	if (s[i] != '\0')
-	if (*s != '\0')
-	{
-		_putchar(s[i]);
-		++i;
-		_puts_recursion(s + i);
-		_putchar(*s);
-		_puts_recursion(s + 1);
-	}
-
-	else
-	_putchar ('\n');
-
-}
+#endif
